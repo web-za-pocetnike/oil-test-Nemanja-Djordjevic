@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Mini projekat</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+   <a href="#" class="logo">Logo</a>
+   <div class="iskljuci" onclick="zatvoriMeni ()"></div>
+   
+    <ul class="navigacija">
+     <li><a href="#" style="--i:1;"><i class="fas fa-home"></i> <br> Home</a></li>
+     <li><a href="#" style="--i:2;"><i class="fas fa-users"></i> <br> About</a></li>
+     <li><a href="#" style="--i:3;"><i class="fas fa-home"></i> <br>Section</a></li>
+     <li><a href="#" style="--i:4;"><i class="fas fa-home"></i> <br>Section</a></li>
+     <li><a href="#" style="--i:5;"><i class="fas fa-address-card"></i> <br> Contact</a></li>
+    </ul>
+  </header>
+<section id="slider" >
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slide1.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block text-center">
+              <h1 class="display-4">First slide label</h1>
+              <p>Some representative placeholder content for the first slide. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut inventore minus voluptatem perferendis doloribus dolore reiciendis quae, vitae rem.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide2.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">Second slide label</h2>
+              <p>Some representative placeholder content for the second slide. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam reiciendis qui molestiae vero laudantium et minima tempora ad aspernatur sit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide3.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2  class="display-4">Third slide label</h2>
+              <p>Some representative placeholder content for the third slide. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis ullam ea deserunt impedit tenetur eligendi, suscipit nostrum mollitia nihil?</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- end of slider -->
+<section id="card" class="py-5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center">
+        <div class="holder">
+          <img class="img-fluid" src="./images/card1.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h4>Lorem, ipsum.</h4>
+        </div> 
+        <div class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum distinctio, repudiandae iusto placeat facere id alias, veniam officia culpa quidem harum quis provident suscipit voluptas? Quia sequi dolorum sint illum id? Voluptas optio voluptatibus vel asperiores dolorum itaque modi tempore labore, assumenda iste earum possimus culpa. Eius, inventore quo.
+        </div> 
+      </div>
+    </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="holder">
+            <img  class="img-fluid" src="./images/card2.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h4>Lorem, ipsum.</h4>
+          </div>
+          <div class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum distinctio, repudiandae iusto placeat
+            facere id alias, veniam officia culpa quidem harum quis provident suscipit voluptas? Quia sequi dolorum sint illum
+            id? Voluptas optio voluptatibus vel asperiores dolorum itaque modi tempore labore, assumenda iste earum possimus
+            culpa. Eius, inventore quo.
+          </div>
+        </div>
+      </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card text-center">
+            <div class="holder">
+              <img class="img-fluid" src="./images/card3.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum distinctio, repudiandae iusto placeat
+              facere id alias, veniam officia culpa quidem harum quis provident suscipit voluptas? Quia sequi dolorum sint illum
+              id? Voluptas optio voluptatibus vel asperiores dolorum itaque modi tempore labore, assumenda iste earum possimus
+              culpa. Eius, inventore quo.
+            </div>
+          </div>
+        </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <div class="holder">
+                <img  class="img-fluid" src="./images/card4.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <h4>Lorem, ipsum.</h4>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum distinctio, repudiandae iusto placeat
+                facere id alias, veniam officia culpa quidem harum quis provident suscipit voluptas? Quia sequi dolorum sint illum
+                id? Voluptas optio voluptatibus vel asperiores dolorum itaque modi tempore labore, assumenda iste earum possimus
+                culpa. Eius, inventore quo.
+              </div>
+            </div>
+          </div>
+  </div>
+</div>
+
+</section>
+<!-- end of card -->
+<!-- slika i tekst -->
+<section id="slika-tekst" class="py-5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img-fluid" src="./images/slika1.jpg" alt="">
+    </div>
+    <div class="col-md-6">
+      <h2 class="display-4 text-center">Lorem, ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro inventore consequuntur aliquid ipsa laborum eaque deserunt tempore dolores doloremque sapiente repellat, molestiae perspiciatis neque quae asperiores doloribus explicabo. Quam cumque cum iure aliquid temporibus enim, quia obcaecati voluptate optio adipisci deleniti eligendi ducimus vero cupiditate asperiores facilis ipsam ipsum.</p>
+    </div>
+  </div>
+</div>
+
+
+</section>
+<!-- dve kartice i naslov -->
+<section id="kartice" class="py-5">
+  <div class="container">
+    <h2 class="display-4 text-center">Lorem ipsum dolor sit.</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="holder">
+            <img class="img-fluid" src="./images/card5.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h4>Lorem, ipsum.</h4>
+          </div>
+          <div class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum distinctio, repudiandae iusto placeat
+            facere id alias, veniam officia culpa quidem harum quis provident suscipit voluptas? Quia sequi dolorum sint illum
+            id? Voluptas optio voluptatibus vel asperiores dolorum itaque modi tempore labore, assumenda iste earum possimus
+            culpa. Eius, inventore quo.
+          </div>
+        </div>
+      </div>
+      
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="holder">
+              <img class="img-fluid" src="./images/card6.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h4>Lorem, ipsum.</h4>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum distinctio, repudiandae iusto placeat
+              facere id alias, veniam officia culpa quidem harum quis provident suscipit voluptas? Quia sequi dolorum sint illum
+              id? Voluptas optio voluptatibus vel asperiores dolorum itaque modi tempore labore, assumenda iste earum possimus
+              culpa. Eius, inventore quo.
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- sledeca sekcija -->
+<section id="textSlika" class="py-5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="display-4 text-center py-1">Lorem ipsum dolor sit amet consectetur.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate voluptate hic alias doloribus illo corporis ipsa quidem, repellendus molestias unde aliquam rerum quos nesciunt reprehenderit, explicabo accusantium voluptas et soluta perspiciatis eveniet, quaerat animi? At earum incidunt dolor iure facilis eius mollitia, impedit doloremque, quia illum exercitationem rerum officiis?</p>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="./images/slika2.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+</section>
+<!-- forma -->
+<section id="form" class="p-5">
+  <form>
+    <h2 class="display-4 text-center text-white">Contact Us</h2>
+    <div class="row ">
+      <div class="col-md-4 mt-3">
+        <input type="text" class="form-control" placeholder="First name" required>
+      </div>
+      <div class="col-md-4 mt-3">
+        <input type="text" class="form-control" placeholder="Last name" required>
+        
+      </div>
+      <div class="col-md-4 mt-3">
+        <input type="email" class="form-control" placeholder="Your email" required>
+       
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <textarea class="form-control is-invalid"  placeholder="Required example textarea" rows="10" required></textarea>
+        </div>
+      </div>
+  
+    <button class="btn btn-primary mt-3" type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- end of form -->
+<!-- footer -->
+<footer id="footer" class="py-3">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <a href=""><i class="fab fa-facebook-messenger"></i></a>
+        <a href=""><i class="fab fa-instagram-square"></i></a>
+        <h3>&copy; Made by RisHub</h3>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+ <script src="./main.js"></script>
+</body>
+</html>

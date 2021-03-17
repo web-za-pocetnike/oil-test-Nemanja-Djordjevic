@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+}
+:root {
+  --orange: #ff9505;
+  --gray: #353531;
+  --lightGray: #eee;
+  --white: #fff;
+  --orangeRed: #ec4e20;
+}
+.py-5 {
+  padding: 120px 0 !important;
+}
+.p-5 {
+  padding: 70px !important;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  z-index: 1000;
+  background: var(--gray);
+}
+header .logo {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideleft 0.5s ease-in-out forwards;
+}
+header .iskljuci {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: url(./images/menu.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1000;
+  filter: invert(1);
+  opacity: 0;
+  animation: slideright 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+header .iskljuci.active {
+  background: url(./images/close.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(1);
+}
+
+.navigacija {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+}
+.navigacija.active {
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.navigacija li {
+  list-style: none;
+}
+.navigacija li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--orange);
+  margin: 0 20px;
+  font-weight: 600;
+  display: inline-block;
+  opacity: 0;
+  text-align: center;
+}
+.navigacija li a:hover {
+  color: var(--orangeRed);
+  transition: 1s ease;
+  transform: scale(1.2) !important;
+}
+
+.navigacija.active li a {
+  opacity: 0;
+  animation: slideright 0.5s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideleft {
+  0% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* slider */
+#slider {
+  background: var(--lightGray);
+}
+
+.carousel-caption {
+  color: black;
+  text-align: center;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+/* card */
+
+.holder {
+  overflow: hidden;
+}
+
+.holder img {
+  transition: transform 3s ease-in-out;
+}
+.holder img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+/* slika-tekst */
+
+#slika-tekst {
+  background: var(--lightGray);
+}
+/* kartice */
+
+#kartice h2 {
+  margin-bottom: 1em;
+}
+/* textSlika */
+#textSlika {
+  background: var(--lightGray);
+}
+/* form */
+#form {
+  background: var(--gray);
+  text-align: center;
+}
+#form .btn {
+  font-size: 1.4rem;
+  background: var(--orange);
+  border: var(--orange);
+}
+#form .btn:hover {
+  background: var(--orangeRed);
+  border: var(--orangeRed);
+  transition: 1s ease;
+}
+/* footer */
+
+footer {
+  background: var(--lightGray);
+}
+footer a {
+  font-size: 2rem;
+  color: rgb(34, 73, 213);
+}
+footer a:hover {
+  color: var(--orangeRed);
+  transition: 1s ease;
+}
+footer i:hover {
+  animation: footer 1s ease;
+}
+@keyframes footer {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+footer h3 {
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .py-5 {
+    padding: 50px 20px !important;
+  }
+  header {
+    padding: 10px 20px;
+    height: 70px;
+  }
+  .navigacija {
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 10px;
+  }
+}
